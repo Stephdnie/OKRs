@@ -2,8 +2,6 @@ from helpers import flow_min_to_hour
 
 def energy_consumption(operational_hours, input_actual_power_required):
     calculated_energy_consumption = input_actual_power_required * operational_hours
-    print("Actual calcultated energy consumption is ",
-        round(calculated_energy_consumption, 2))
     return calculated_energy_consumption
 
 def kpi_one_two(isentropic_power, input_actual_power_required, gas_flow_rate_min, operational_hours, calculated_energy_consumption):
